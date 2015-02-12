@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation._;
 @ComponentScan
 class HelloController {
 
-   @RequestMapping(Array("/"))
+  @RequestMapping(value=Array("/"), method=Array(RequestMethod.GET))
    def newresponse() = "hello-world...hello-scala!!"
 }
 
